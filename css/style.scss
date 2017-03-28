@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+#cnv {
+	border: 2px solid red;
+	padding-right: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+input[type="number"] {
+	width: 60px;
+}
+form {
+}
+div.asideContainer {
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 45%;
+	border: 1px black solid;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: space-around;
+	align-content: space-around;
+}
+#aside1 {
+	// border: 1px dashed red;
+	padding: 0 20px;
+}
+#aside2 {
+	// border: 1px dashed red;
+	padding: 0 20px;
+	
+}
+#aside3 {
+	// border: 1px dashed red;
+	padding: 0 20px;
+
+}
+#aside4 {
+	// border: 1px dashed red;
+	padding: 0 20px;
+
+}
+#drawn {
+	display: block;
+	margin: 0 auto;
+}
