@@ -3,64 +3,35 @@
 	<legend>canvas generator</legend>
 		<fieldset>
 		<!-- shapes to draw, amount,  -->
-			<legend>shapes</legend>
+		<table>
+		<th>shape</th>
+		<th>lines</th>
+		<th>triangles</th>
+		<th>squares</th>
+		<th>circles</th>
+		<th>hexagons</th><br>
+		<tr>
+			<td><p>max amount</p></td>
+			<td><input type="number" name="linesNumber" id="fLinesNumber" min="0" max="3" ng-model="draw.fLinesNumber"></td>
+			<td><input type="number" name="trianglesNumber" id="fTrianglesNumber" min="0" max="3" ng-model="draw.fTrianglesNumber"></td>
+			<td><input type="number" name="squaresNumber" id="fSquaresNumber" min="0" max="3" ng-model="draw.fSquaresNumber"></td>
+			<td><input type="number" name="circlesNumber" id="fCirclesNumber" min="0" max="3" ng-model="draw.fCirclesNumber"></td>
+			<td><input type="number" name="hexagonsNumber" id="fHexagonsNumber" min="0" max="3" ng-model="draw.fHexagonsNumber"></td>
+		</tr>
+		</table>
 		<aside id="aside1">
-			shape show/hide:
-			lines <input type="checkbox" name="lines" id="fLines" value="lines">
-			triangles <input type="checkbox" name="triangles" id="fTriangles" value="triangles">
-			squares <input type="checkbox" name="squares" id="fSquares" value="squares">
-			circles <input type="checkbox" name="circles" id="fCircles" value="">
-		</aside><br>
+		</aside>
 		<aside id="aside2">
-			how many?
-			<input type="number" name="linesNumber" id="fLinesNumber">
-			<input type="number" name="trianglesNumber" id="fTrianglesNumber">
-			<input type="number" name="squaresNumber" id="fSquaresNumber">
-			<input type="number" name="circlesNumber" id="fCirclesNumber">
-		</aside><br>
+			
+		</aside>
 		<aside id="aside3">
-		</aside><br>
+			
+		</aside>
 		<aside id="aside4">
-		</aside><br>
+			
+		</aside>
 		</fieldset>
 
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-		<label for=""></label>
-		<input type="text">
-
-
-		<button type="submit" value="drawn" id="drawn">Draw</button>
+		<button type="submit" value="drawn" id="drawn" ng-click="draw.initialize()">Draw</button>
 	</fieldset>
 </form>
